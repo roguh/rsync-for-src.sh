@@ -13,7 +13,7 @@ if [ "$#" != 2 ]; then
 fi
 
 set -x
-RSYNC_OPTS="--exclude=target --exclude=node_modules --cvs-exclude --archive --human-readable --progress --delete-after --verbose --recursive"
+RSYNC_OPTS="--exclude=target --stats --exclude=node_modules --cvs-exclude --archive --human-readable --progress --delete-after --verbose --recursive"
 
 
 for srcdir in $1/*; do
